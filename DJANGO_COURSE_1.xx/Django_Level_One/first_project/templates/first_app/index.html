@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<!-- Changed staticfiles to static -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Django Guitar Page</title>
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/>
+  </head>
+  <body>
+    <h1>Hi, this is a picture of Django himself!</h1>
+    <img src="{% static "images/djangoguitar.jpg" %}" alt="Uh Oh, didn't show!">
+    <!-- double curly brackets is for text injections -->
+    <!-- curly brackets with percent sign is for logic and complex injections -->
+    <br>
+    {{ insert_me }}
+
+  </body>
+</html>
